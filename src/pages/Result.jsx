@@ -44,10 +44,10 @@ const Result = () => {
               <div className="flex items-center justify-center">
                 <div className="w-full sm:h-[90vh] flex justify-center mt-2 sm:mt-0 p-4 md:p-0 md:pr-4 md:pt-4" style={{}}>
                   <img src={api.image} alt="" className="" />
-                  <div className={`${api.option == 'Geospatial Sentiment Analysis' ? "" : 'hidden'} md:h-auto w-full`}>
+                  <div className={`${api.option == 'Geospatial Information Map' ? "" : 'hidden'} md:h-auto w-full`}>
                     
                     <div className="w-full h-[60vh] sm:h-[85vh] ">
-                      <iframe src={api.option == 'Geospatial Sentiment Analysis' ? 'https://analytics-ai.up.railway.app/api/v1/images/sentiment_map.html' : ''} frameborder="0" className="w-full h-full"></iframe>
+                      <iframe src={api.option == 'Geospatial Information Map' ? 'http://api.odvas.com/images/sentiment_map.html~' : ''} frameborder="0" className="w-full h-full"></iframe>
                     </div>
 
                   </div>

@@ -7,10 +7,10 @@ import UploadCloud from '../assets/upload-cloud.svg'
 import SideBar from "./Sidebar";
 import axios from "axios";
 const data = [
-  { id: 1, title: "Mind Map", checked: true },
-  { id: 2, title: "Knowledge Map" },
-  { id: 3, title: "Geospatial Sentiment Analysis" },
-  { id: 4, title: "Sentiment Statistics Per State" },
+  { id: 1, title: "Concept Map", checked: true },
+  { id: 2, title: "Word Cloud Visualization" },
+  { id: 3, title: "Geospatial Information Map" },
+  { id: 4, title: "Sentiment Analysis Per State" },
 ];
 const FileDropUpload = () => {
   const navigate = useNavigate()
@@ -101,7 +101,7 @@ const FileDropUpload = () => {
 
 
     setIsLoading(true); // Show loader
-    axios.post(`https://analytics-ai.up.railway.app/api/v1/result?analytic_type=${selectedOption}`,
+    axios.post(`https://api.odvas.com//api/v1/result?analytic_type=${selectedOption}`,
       formData,
       {
         headers: {
