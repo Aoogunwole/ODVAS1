@@ -34,7 +34,7 @@ const Result = () => {
         {
           api && (
             <>
-              <h6 className="pt-7 text-[22px] md:text-[27px] bg-white text-primary font-normal text-dark2 ml-6 md:ml-0">
+              <h6 className="pt-7 text-[22px] md:text-[27px] bg-white text-primary font-normal ml-6 md:ml-0">
                 Visualization of {api.option}
               </h6>
 
@@ -47,7 +47,7 @@ const Result = () => {
                   <div className={`${api.option == 'Geospatial Information Map' ? "" : 'hidden'} md:h-auto w-full`}>
                     
                     <div className="w-full h-[60vh] sm:h-[85vh] ">
-                      <iframe src={api.option == 'Geospatial Information Map' ? 'http://api.odvas.com/images/sentiment_map.html~' : ''} frameborder="0" className="w-full h-full"></iframe>
+                      <iframe src={api.option == 'Geospatial Information Map' ? 'https://api.odvas.com/images/sentiment_map.html' : ''} frameborder="0" className="w-full h-full"></iframe>
                     </div>
 
                   </div>
