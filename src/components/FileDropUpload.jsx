@@ -32,7 +32,7 @@ const FileDropUpload = () => {
     }
   }, []);
   const handleOptionChange = (id) => {
-    console.log(id);
+    // console.log(id);
     setSelectedOption(id);
   };
   const toggleModal = () => {
@@ -115,12 +115,12 @@ const FileDropUpload = () => {
         }
       }
     ).then((response) => {
-      console.log(response);
+      // console.log(response);
       setColor2("bg-primary text-white");
       localStorage.setItem('analytics-ai', JSON.stringify({ "image": response.data.data, option: selectedOption }));
       navigate('/result')
     }).catch((error) => {
-      console.error('Error uploading file:', error);
+      // console.error('Error uploading file:', error);
       // Handle error
       if (error.response.status == 400) {
         alert(error.response.data.message)
